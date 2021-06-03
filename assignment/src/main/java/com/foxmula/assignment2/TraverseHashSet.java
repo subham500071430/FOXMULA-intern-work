@@ -16,7 +16,7 @@ public class TraverseHashSet {
    }
 	
 	
-   private HashSet<Integer> add() throws IOException{
+   public HashSet<Integer> add() throws IOException{
 		
 		HashSet<Integer> h = new HashSet<Integer>();
 		
@@ -32,7 +32,7 @@ public class TraverseHashSet {
        return h;
 	 }
 
-     private void traverse(HashSet<Integer> h) {
+     public void traverse(HashSet<Integer> h) {
 	
 	
 	 for(Integer i : h) 

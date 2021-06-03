@@ -16,7 +16,7 @@ public class FindPair {
 		obj.find(obj.add(),k);
 		
 	}
-   private ArrayList<Integer> add() throws IOException{
+   public ArrayList<Integer> add() throws IOException{
 		
 		ArrayList<Integer> a = new ArrayList<Integer>();
 		
@@ -31,7 +31,7 @@ public class FindPair {
        }
        return a;
 	}
-   private void find(ArrayList<Integer> a , int x) {
+   public void find(ArrayList<Integer> a , int x) {
 		
 		
 		HashSet<Integer> h = new HashSet<Integer>();

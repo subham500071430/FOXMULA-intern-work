@@ -23,7 +23,7 @@ public class SetContains {
 	}
 	
 	
-   private HashSet<Integer> add() throws IOException{
+   public HashSet<Integer> add() throws IOException{
 		
 		HashSet<Integer> h = new HashSet<Integer>();
 		
@@ -39,7 +39,7 @@ public class SetContains {
        return h;
 	}
 	
-	private boolean traverse(HashSet<Integer> h,int x) {
+	public boolean traverse(HashSet<Integer> h,int x) {
 		
 		 boolean flag =   false;
 		

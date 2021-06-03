@@ -23,7 +23,7 @@ public class checkArrayList {
 			System.out.println("Element is not present");
 		}
 	}
-	private boolean check(ArrayList<Integer> a , int k) {
+	public boolean check(ArrayList<Integer> a , int k) {
 		
 		for(int i=0;i<a.size();i++) {
 			if(a.get(i)==k) {
@@ -33,7 +33,7 @@ public class checkArrayList {
 		
 		return false;
 	}
-	private ArrayList<Integer> add() throws IOException{
+	public ArrayList<Integer> add() throws IOException{
 		
 		ArrayList<Integer> a = new ArrayList<Integer>();
 		

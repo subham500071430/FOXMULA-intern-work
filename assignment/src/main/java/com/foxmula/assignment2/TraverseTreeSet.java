@@ -15,7 +15,7 @@ public class TraverseTreeSet {
 	}
 		
 		
-	private TreeSet<Integer> add() throws IOException{
+	public TreeSet<Integer> add() throws IOException{
 			
 			TreeSet<Integer> h = new TreeSet<Integer>();
 			
@@ -32,7 +32,7 @@ public class TraverseTreeSet {
 	       return h;
 		}
 
-	private void traverse(TreeSet<Integer> h) {
+	public void traverse(TreeSet<Integer> h) {
 		
 		
 		 for(Integer i : h) 

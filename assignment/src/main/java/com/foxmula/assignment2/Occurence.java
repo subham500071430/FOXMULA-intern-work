@@ -13,7 +13,7 @@ public static void main(String[] args) throws IOException{
 		obj.display(obj.checkOccur(obj.add()));
 		
 	}
-private ArrayList<Integer> add() throws IOException{
+public ArrayList<Integer> add() throws IOException{
 	
 	ArrayList<Integer> a = new ArrayList<Integer>();
 	
@@ -28,7 +28,7 @@ private ArrayList<Integer> add() throws IOException{
     }
     return a;
 }
-private HashMap<Integer,Integer> checkOccur(ArrayList<Integer> a) throws IOException{
+public HashMap<Integer,Integer> checkOccur(ArrayList<Integer> a) throws IOException{
 	
 	HashMap<Integer,Integer> hm = new HashMap<Integer,Integer>();
 	
@@ -46,7 +46,7 @@ private HashMap<Integer,Integer> checkOccur(ArrayList<Integer> a) throws IOExcep
     }
     return hm;
 }
-private void display(HashMap<Integer,Integer> h) {
+public void display(HashMap<Integer,Integer> h) {
 	
 	 for(Map.Entry<Integer,Integer> el : h.entrySet()) {
 		 
