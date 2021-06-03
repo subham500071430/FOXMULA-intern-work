@@ -1,4 +1,4 @@
-package assignment2;
+package com.foxmula.assignment2;
 
 import java.io.*;
 import java.util.*;
