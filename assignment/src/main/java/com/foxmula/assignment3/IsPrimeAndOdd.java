@@ -1,8 +1,7 @@
 package com.foxmula.assignment3;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.*;
+import java.io.*;
 
 public class IsPrimeAndOdd {
      
@@ -15,11 +14,22 @@ public class IsPrimeAndOdd {
         int num = Integer.parseInt(br.readLine());
 
         IsPrimeAndOdd i = new IsPrimeAndOdd();
+        
+        try{
+           
+            if(i.check(num))
+        {
+            throw new CustomException("Number is Invalid");
+        }
+        }
+        catch(CustomException e)
+        {
+            System.out.println(e);
+        }
 
-        i.check(num);
 
     }
-    public void check(int a)
+    public boolean check(int a)
     {
            boolean prime = true;
 
@@ -32,20 +42,20 @@ public class IsPrimeAndOdd {
                     break;
                 }
            }
-           try
-           {
-                 
+               
             if(prime&&a%2!=0)
             { 
-               throw new Exception("Number is Invalid");
+               
+               return true;
             }
-
-           }
-           catch(Exception e)
-           {
-                System.out.println(e);
-           }
-
+           
+            return false;
     }
      
+}
+class CustomException extends Exception{
+    public CustomException(String s)
+    {
+        super(s);
+    }
 }
